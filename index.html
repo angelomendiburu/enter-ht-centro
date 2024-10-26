@@ -1,1 +1,140 @@
-<h1> Hello</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restobar Centro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 4px solid #ff6f61;
+        }
+
+        nav {
+            background: #343a40;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ff6f61;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 300px; /* Hace que las secciones tengan un tamaño mínimo y se ajusten */
+            max-width: 300px; /* Limita el ancho máximo de cada sección */
+        }
+
+        h2 {
+            color: #ff7e5f;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restobar Centro</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#platos">Platos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="entradas">
+            <h2>Entradas</h2>
+            <ul>
+                <li>Palta rellena</li>
+                <li>Tequeños</li>
+                <li>Tamalitos</li>
+            </ul>
+        </section>
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <ul>
+                <li>Limonada frozen</li>
+                <li>chicha de jora</li>
+                <li>pisco</li>
+            </li>
+            </ul>
+        </section>
+        <section id="platos">
+            <h2>Platos</h2>
+            <ul>
+                <li>Ceviche</li>
+                <li>Causa limeña</li>
+                <li>Lomo saltado</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restobar Centro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
